@@ -1,0 +1,105 @@
+/* Ensure consistency across all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0066cc; /* Use consistent blue color */
+    color: white;
+    padding: 10px 20px;
+    position: sticky; /* Keeps header at the top */
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around; /* Aligns nav items evenly */
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+section {
+    min-height: 100vh; /* Full viewport height */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center align text in sections */
+    position: relative; /* Needed for absolute positioning of child elements */
+}
+
+#home {
+    background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    color: rgb(10, 26, 52);
+}
+
+#projects {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230630/pngtree-d-rendered-illustration-of-blue-and-red-abstract-concept-in-4k-image_3691174.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    color: rgb(192, 244, 238);
+}
+
+#contact {
+    background-image: url('https://img.freepik.com/premium-vector/contact-us-customer-support-hotline-connect-concept_387612-893.jpg?w=1380');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    color: white;
+}
+
+#about {
+    background-image: url('https://img.freepik.com/free-photo/bulb-gears_1134-173.jpg?size=626&ext=jpg&ga=GA1.1.68531855.1729403739&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    color: rgb(42, 9, 9);
+}
+
+h2 {
+    font-size: 2rem; /* Consistent heading size */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+form {
+    max-width: 500px; /* Centered form */
+    margin: 20px auto; /* Center the form with margin */
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Margin around inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    background-color: #6ba3db; /* Consistent button color */
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #62abf4; /* Darker blue on hover */
+}
+
